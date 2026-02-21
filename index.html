@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shobhit Singh — Full-Stack Developer</title>
+  <meta name="description"
+    content="Professional portfolio of Shobhit Singh — Full-Stack Developer specializing in React, Spring Boot, Next.js, and cloud-native applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ======== SIDEBAR ======== -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="sidebar-inner">
+      <!-- Avatar -->
+      <div class="avatar-wrapper">
+        <div class="avatar">
+          <span class="avatar-initials">SS</span>
+        </div>
+        <div class="avatar-status"></div>
+      </div>
+
+      <h1 class="sidebar-name">Shobhit Singh</h1>
+      <span class="sidebar-role">Full-Stack Developer</span>
+
+      <div class="sidebar-divider"></div>
+
+      <!-- Info Items -->
+      <ul class="sidebar-info">
+        <li>
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="info-label">Email</span>
+            <a href="mailto:shobhits019@gmail.com" class="info-value">shobhits019@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <div class="info-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <span class="info-label">Phone</span>
+            <a href="tel:+919286277187" class="info-value">+91 9286277187</a>
+          </div>
+        </li>
+        <li>
+          <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <span class="info-label">Education</span>
+            <span class="info-value">B.Tech IT — AKTU</span>
+          </div>
+        </li>
+        <li>
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Ghaziabad, UP, India</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="sidebar-divider"></div>
+
+      <!-- Social Links -->
+      <div class="sidebar-socials">
+        <a href="https://www.linkedin.com/in/shobhit-singh-1ab315203/" target="_blank" aria-label="LinkedIn"
+          class="sidebar-social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Shobhits1" target="_blank" aria-label="GitHub" class="sidebar-social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:shobhits019@gmail.com" aria-label="Email" class="sidebar-social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Resume Download -->
+      <a href="Shobhit_Main.pdf" download class="sidebar-resume-btn">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </aside>
+
+  <!-- ======== OVERLAY (mobile) ======== -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main class="main-content">
+    <!-- Mobile Header -->
+    <header class="mobile-header" id="mobileHeader">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <span class="mobile-logo"><span class="logo-bracket">&lt;</span>SS<span class="logo-bracket"> /&gt;</span></span>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav" id="tabsNav">
+      <button class="tab-btn active" data-tab="about"><i class="fas fa-user"></i> About</button>
+      <button class="tab-btn" data-tab="resume"><i class="fas fa-file-alt"></i> Resume</button>
+      <button class="tab-btn" data-tab="projects"><i class="fas fa-code-branch"></i> Projects</button>
+      <button class="tab-btn" data-tab="skills"><i class="fas fa-cogs"></i> Skills</button>
+      <button class="tab-btn" data-tab="contact"><i class="fas fa-paper-plane"></i> Contact</button>
+    </nav>
+
+    <!-- ====== TAB: ABOUT ====== -->
+    <section class="tab-content active" id="tab-about">
+      <div class="content-header">
+        <h2 class="page-title">About Me</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-text">
+        <p>
+          I am a <strong>Full-Stack Developer</strong> and final-year B.Tech Information Technology student
+          at Dr. APJ Abdul Kalam Technical University, Ghaziabad. I specialize in building
+          scalable, production-grade web applications using <strong>React</strong>, <strong>Spring Boot</strong>,
+          <strong>Next.js</strong>, and cloud services like <strong>AWS</strong>.
+        </p>
+        <p>
+          With hands-on internship experience in backend microservices and full-stack development,
+          I've worked on systems handling thousands of active users — from building secure JWT-based
+          authentication to migrating monolithic apps to serverless architectures on AWS.
+          I am passionate about clean code, performance optimization, and solving complex engineering challenges.
+        </p>
+      </div>
+
+      <!-- What I Do -->
+      <h3 class="sub-title">What I Do</h3>
+      <div class="what-i-do-grid">
+        <div class="wid-card glass-card">
+          <div class="wid-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>Frontend Development</h4>
+          <p>Building responsive, dynamic UIs with React, Next.js, TailwindCSS, and modern state management.</p>
+        </div>
+        <div class="wid-card glass-card">
+          <div class="wid-icon"><i class="fas fa-server"></i></div>
+          <h4>Backend Engineering</h4>
+          <p>Architecting robust APIs with Spring Boot, Express, Node.js, and database optimization.</p>
+        </div>
+        <div class="wid-card glass-card">
+          <div class="wid-icon"><i class="fas fa-cloud"></i></div>
+          <h4>Cloud & DevOps</h4>
+          <p>Deploying scalable apps on AWS (S3, EC2, Lambda, Amplify), Docker, and CI/CD pipelines.</p>
+        </div>
+        <div class="wid-card glass-card">
+          <div class="wid-icon"><i class="fas fa-credit-card"></i></div>
+          <h4>Payment & Integration</h4>
+          <p>Integrating Razorpay, Cloudinary, Mapbox, and third-party services into full-stack apps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TAB: RESUME ====== -->
+    <section class="tab-content" id="tab-resume">
+      <div class="content-header">
+        <h2 class="page-title">Resume</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="resume-grid">
+        <!-- Experience -->
+        <div class="resume-column">
+          <h3 class="resume-section-title">
+            <div class="resume-icon"><i class="fas fa-briefcase"></i></div>
+            Experience
+          </h3>
+          <div class="resume-timeline">
+            <div class="resume-item glass-card">
+              <span class="resume-date">Jun 2025 — Aug 2025</span>
+              <h4>Backend Developer Intern</h4>
+              <span class="resume-company">Codec Technologies · Remote</span>
+              <p>Developed secure microservices using Java (Spring Boot) for user authentication and session management
+                with JWT for 1,000+ active users. Migrated monolithic codebases to serverless architecture using AWS
+                Lambda, reducing infrastructure costs by 15%. Achieved 85% code coverage with JUnit tests.</p>
+            </div>
+            <div class="resume-item glass-card">
+              <span class="resume-date">Apr 2025 — Jun 2025</span>
+              <h4>Full-Stack Development Intern</h4>
+              <span class="resume-company">Unified Mentor · Remote</span>
+              <p>Built a full-stack food ordering app with React and Spring Boot, integrating Razorpay payments and AWS
+                S3 storage, serving 500+ users at 98% uptime. Optimized RESTful APIs reducing response times by 40%.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-column">
+          <h3 class="resume-section-title">
+            <div class="resume-icon"><i class="fas fa-graduation-cap"></i></div>
+            Education
+          </h3>
+          <div class="resume-timeline">
+            <div class="resume-item glass-card">
+              <span class="resume-date">2022 — 2026</span>
+              <h4>B.Tech in Information Technology</h4>
+              <span class="resume-company">Dr. APJ Abdul Kalam Technical University</span>
+              <p>Ghaziabad, Uttar Pradesh. Focused on Data Structures, Algorithms, Web Development, Database Systems,
+                and Cloud Computing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TAB: PROJECTS ====== -->
+    <section class="tab-content" id="tab-projects">
+      <div class="content-header">
+        <h2 class="page-title">Projects</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+
+      <!-- Project Cards -->
+      <div class="projects-grid">
+        <!-- CraveDash -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #ff6b35, #f7c948);">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Shobhits1/CraveDash" target="_blank" class="project-action-btn"
+                aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/Shobhits1/CraveDash" target="_blank" class="project-action-btn"
+                aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Full Stack</span>
+            <h3>CraveDash</h3>
+            <p>Full-stack food delivery platform serving 1,000+ daily orders with JWT auth, role-based access, Razorpay
+              payments, AWS S3 storage, and sub-200ms response times.</p>
+            <div class="skill-tags">
+              <span class="tag">React 18</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">AWS S3</span>
+              <span class="tag">Razorpay</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Builder -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #6366f1, #a855f7);">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Shobhits1/resume-builder-fullstack" target="_blank" class="project-action-btn"
+                aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/Shobhits1/resume-builder-fullstack" target="_blank" class="project-action-btn"
+                aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Full Stack</span>
+            <h3>Resume Builder</h3>
+            <p>Professional resume creator with 3 templates, PDF export, email sharing, Cloudinary uploads, and Razorpay
+              premium features — 500+ creations with 95% satisfaction.</p>
+            <div class="skill-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Cloudinary</span>
+              <span class="tag">TailwindCSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property Management -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #06b6d4, #22d3ee);">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Shobhits1/-property-management-platform" target="_blank"
+                class="project-action-btn" aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/Shobhits1/-property-management-platform" target="_blank"
+                class="project-action-btn" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Full Stack</span>
+            <h3>Property Management Platform</h3>
+            <p>Property management system with Mapbox GL maps, PostGIS queries, tenant tracking, lease management, and
+              automated workflows — managing 200+ listings.</p>
+            <div class="skill-tags">
+              <span class="tag">Next.js 14</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Mapbox</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TAB: SKILLS ====== -->
+    <section class="tab-content" id="tab-skills">
+      <div class="content-header">
+        <h2 class="page-title">Skills</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <h3 class="sub-title">Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card glass-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h4>Languages</h4>
+          <p>Java, JavaScript, TypeScript, Python</p>
+        </div>
+        <div class="skill-card glass-card">
+          <div class="skill-icon"><i class="fas fa-palette"></i></div>
+          <h4>Frontend</h4>
+          <p>React, Next.js, TailwindCSS, Bootstrap, Vite, Redux Toolkit, Context API</p>
+        </div>
+        <div class="skill-card glass-card">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <h4>Backend</h4>
+          <p>Spring Boot, Express, Node.js, RESTful APIs, Prisma ORM, Maven</p>
+        </div>
+        <div class="skill-card glass-card">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>Databases</h4>
+          <p>MongoDB, PostgreSQL, PostGIS, MongoDB Atlas</p>
+        </div>
+        <div class="skill-card glass-card">
+          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+          <h4>Cloud & DevOps</h4>
+          <p>AWS (S3, EC2, Amplify), Docker, GitHub Actions</p>
+        </div>
+        <div class="skill-card glass-card">
+          <div class="skill-icon"><i class="fas fa-tools"></i></div>
+          <h4>Tools & Integration</h4>
+          <p>Razorpay, Cloudinary, Mapbox GL, JWT Auth, Git, Postman</p>
+        </div>
+      </div>
+
+      <h3 class="sub-title" style="margin-top: 48px;">Soft Skills</h3>
+      <div class="soft-skills-grid">
+        <div class="soft-skill-card glass-card">
+          <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+          <h4>Communication</h4>
+          <p>Articulating complex technical concepts clearly to diverse stakeholders and team members.</p>
+        </div>
+        <div class="soft-skill-card glass-card">
+          <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h4>Problem Solving</h4>
+          <p>Analytical approach to debugging, designing scalable architectures, and optimizing performance.</p>
+        </div>
+        <div class="soft-skill-card glass-card">
+          <div class="soft-skill-icon"><i class="fas fa-sync-alt"></i></div>
+          <h4>Adaptability</h4>
+          <p>Quickly mastering new frameworks, tools, and technologies to deliver cutting-edge solutions.</p>
+        </div>
+        <div class="soft-skill-card glass-card">
+          <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+          <h4>Teamwork</h4>
+          <p>Thriving in agile environments and cross-functional teams to deliver high-quality products.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TAB: CONTACT ====== -->
+    <section class="tab-content" id="tab-contact">
+      <div class="content-header">
+        <h2 class="page-title">Contact</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <h3 class="sub-title">Contact Info</h3>
+      <div class="contact-info-grid">
+        <a href="mailto:shobhits019@gmail.com" class="contact-info-card glass-card">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="contact-info-label">Email</span>
+            <span class="contact-info-value">shobhits019@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+919286277187" class="contact-info-card glass-card">
+          <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <span class="contact-info-label">Phone</span>
+            <span class="contact-info-value">+91 9286277187</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/shobhit-singh-1ab315203/" target="_blank"
+          class="contact-info-card glass-card">
+          <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <span class="contact-info-label">LinkedIn</span>
+            <span class="contact-info-value">Shobhit Singh</span>
+          </div>
+        </a>
+        <a href="https://github.com/Shobhits1" target="_blank" class="contact-info-card glass-card">
+          <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <span class="contact-info-label">GitHub</span>
+            <span class="contact-info-value">/Shobhits1</span>
+          </div>
+        </a>
+        <a href="Shobhit_Main.pdf" download class="contact-info-card glass-card">
+          <div class="contact-info-icon"><i class="fas fa-file-download"></i></div>
+          <div>
+            <span class="contact-info-label">Resume</span>
+            <span class="contact-info-value">Download Resume</span>
+          </div>
+        </a>
+      </div>
+
+      <h3 class="sub-title" style="margin-top: 48px;">Contact Form</h3>
+      <form class="contact-form glass-card" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms Config -->
+        <input type="hidden" name="access_key" value="8c318aff-d63e-496e-8d70-751e287a9a07" />
+        <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+        <input type="hidden" name="subject" value="New message from your Portfolio!" />
+        <input type="checkbox" name="botcheck" style="display: none;" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Your Email</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" placeholder=" " required />
+          <label for="subject">Subject</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
